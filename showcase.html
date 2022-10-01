@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>UVSTM-Modal</title>
+    <link rel="stylesheet" href="https://unniiiverse.github.io/static/fonts/ProximaNova/font.css">
+    <link rel="stylesheet" href="https://unniiiverse.github.io/static/normalize.min.css">
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- codepen showcase UI -->
+    <div class="unniiiverse-showcaseUI-header">
+        <h2 class="unniiiverse-showcaseUI-module"><b class="unniiiverse-showcaseUI-moduleType">Modal</b> Module
+            showcase</h2>
+        <i class="unniiiverse-showcaseUI-visitGithub">Visit modal module on my <a
+                href="https://github.com/unniiiverse/uvstm-modal" target="_blank"
+                class="unniiiverse-showcaseUI-link">github</a> to
+            get more information about it.</i> <!-- module on github -->
+    </div>
+    <!-- end codepen showcase UI -->
+
+    <div class="container">
+
+        <div class="container">
+
+            <div class="unniiiverse-showcaseUI-btns">
+                <div class="unniiiverse-showcaseUI-modal_button">
+                    <button class="uvstm-modal-trigger_button">
+                        Modal trigger #1
+                    </button>
+                    <p>Position: center // default</p>
+                </div>
+    
+                <div class="unniiiverse-showcaseUI-modal_button">
+                    <button class="uvstm-modal-trigger_button" id="trigger" data-uvstm-modal-trigger_openID="modal"
+                        data-uvstm-modal-modalItem-position="top" data-uvstm-modal-customID="customtrigger custommodal">
+                        Modal trigger #2
+                    </button>
+                    <p>Position: top (data-uvstm-modal-modalItem-position)</p>
+                </div>
+    
+                <div class="unniiiverse-showcaseUI-modal_button">
+                    <button class="uvstm-modal-trigger_button" id="trigger" data-uvstm-modal-trigger_openID="modal"
+                        data-uvstm-modal-modalItem-position="custom">
+                        Modal trigger #3
+                    </button>
+                    <p>Position: custom (t21%, l32%) (data-uvstm-modal-modalItem-position)</p>
+                </div>
+            </div>
+
+            <div class="uvstm-modal-container" data-uvstm-modal-container_close>
+                <div class="uvstm-modal-container_modal" aria-hidden="true">
+                    <button class="uvstm-modal-container_close" data-uvstm-modal-container_close>
+                        [X]
+                    </button>
+
+                    <p style="color: #000;">Modal #1</p>
+                </div>
+
+                <div class="uvstm-modal-container_modal" id="modal" aria-labelledby="trigger" aria-modal="trigger"
+                    aria-hidden="true" data-uvstm-modal-customID="customtrigger custommodal">
+                    <button class="uvstm-modal-container_close" data-uvstm-modal-container_close>
+                        [X]
+                    </button>
+
+                    <p style="color: #000;">Modal #2</p>
+                </div>
+
+                <div class="uvstm-modal-container_modal" id="modal" aria-labelledby="trigger" aria-modal="trigger"
+                    aria-hidden="true" style="top: 21%; left: 32%;">
+                    <button class="uvstm-modal-container_close" data-uvstm-modal-container_close>
+                        [X]
+                    </button>
+
+                    <p style="color: #000;">Modal #3</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- codepen showcase UI -->
+    <div class="unniiiverse-showcaseUI-footer">
+        <h2 class="unniiiverse-showcaseUI-madeWith">
+            Made width
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.375 4.375V2.5H19.5V0.625H13.875V2.5H12H10.125V0.625H4.5V2.5H2.625V4.375H0.75V10H2.625V11.875H4.5V13.75H6.375V15.625H8.25V17.5H10.125V19.375H12L23.25 8.125V4.375H21.375Z"
+                    fill="#FF5050" />
+            </svg>
+            by <a href="https://github.com/unniiiverse" class="unniiiverse-showcaseUI-link">unniiiverse</a>
+        </h2>
+
+        <a href="https://github.com/unniiiverse/uvstm-moda" target="_blank" class="unniiiverse-showcaseUI-link">
+            <!-- module on github -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 0C7.16429 0 0 7.34325 0 16.408C0 23.6584 4.58571 29.8016 10.9429 31.9731C11.7429 32.1231 12.0357 31.616 12.0357 31.1802C12.0357 30.7873 12.0214 29.7587 12.0143 28.3872C7.56429 29.3801 6.62143 26.1871 6.62143 26.1871C5.89286 24.2941 4.84286 23.787 4.84286 23.787C3.39286 22.7655 4.95 22.7869 4.95 22.7869C6.55714 22.9012 7.4 24.4799 7.4 24.4799C8.82857 26.9871 11.1429 26.2657 12.0571 25.8442C12.2 24.787 12.6143 24.0584 13.0714 23.6512C9.52143 23.2369 5.78571 21.8297 5.78571 15.5437C5.78571 13.7507 6.40714 12.2864 7.42857 11.1434C7.26429 10.7291 6.71429 9.05762 7.58571 6.80036C7.58571 6.80036 8.92857 6.35748 11.9857 8.47902C13.2643 8.11471 14.6286 7.93613 15.9929 7.92899C17.35 7.93613 18.7214 8.11471 20 8.47902C23.0571 6.35748 24.3929 6.80036 24.3929 6.80036C25.2643 9.05762 24.7143 10.7291 24.55 11.1434C25.5714 12.2935 26.1929 13.7579 26.1929 15.5437C26.1929 21.844 22.45 23.2298 18.8857 23.637C19.4571 24.1441 19.9714 25.1442 19.9714 26.6728C19.9714 28.8658 19.95 30.6373 19.95 31.1731C19.95 31.6088 20.2357 32.1231 21.05 31.9588C27.4214 29.7944 32 23.6513 32 16.408C32 7.34325 24.8357 0 16 0Z"
+                    fill="white" />
+            </svg>
+        </a>
+    </div>
+    <!-- end codepen showcase UI -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
